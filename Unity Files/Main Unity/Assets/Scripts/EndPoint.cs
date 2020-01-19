@@ -12,6 +12,7 @@ public class EndPoint : MonoBehaviour
         if (collision.gameObject.tag == "End")
         {
             Debug.Log("Collision");
+
             GM.GetComponent<GameManager>().activeChangeNextLevelForm();
         }
     }

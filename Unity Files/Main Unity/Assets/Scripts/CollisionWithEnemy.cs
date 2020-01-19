@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -12,6 +13,7 @@ public class CollisionWithEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+
             //Debug.Log("CollisionWithEnemy");
             GM.GetComponent<GameManager>().activeChangeGameOverForm();
             GM.GetComponent<GameManager>().Pause();

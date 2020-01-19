@@ -22,7 +22,7 @@ public class GravityAffectedObject : MonoBehaviour
     {
         dirX = Input.acceleration.x * moveSpeed;
         dirY = Input.acceleration.y * moveSpeed;
-        //transform.position = new Vector2(Mathf.Clamp(transform.position.x, -29.4f, 29.4f), Mathf.Clamp(transform.position.y, -51.9f, 51.9f));
+        //transform.position = new Vector2(Mathf.Clamp(transform.position.x, -29.4f, 29.4f), Mathf.Clamp(transform.position.y, -51.9f, 51.9f)); or 64.6
     }
 
     void FixedUpdate()

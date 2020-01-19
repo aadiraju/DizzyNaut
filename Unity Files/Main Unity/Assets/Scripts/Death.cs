@@ -9,6 +9,7 @@ public class Death : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("You die!");
+
         }
     }
 }

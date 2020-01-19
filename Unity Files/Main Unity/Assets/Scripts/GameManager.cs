@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         if (GameOverForm.activeSelf.Equals(true)) GameOverForm.SetActive(false);
         else GameOverForm.SetActive(true);
     }
+
     static public bool isPaused;
     void Start()
     {
@@ -79,6 +80,9 @@ public class GameManager : MonoBehaviour
     }
     public void Exit()
     {
+        Pause();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         Debug.Log("Exit");
         Application.Quit();
     }
