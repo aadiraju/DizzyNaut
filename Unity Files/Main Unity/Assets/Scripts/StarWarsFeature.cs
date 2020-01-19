@@ -44,8 +44,6 @@ public class StarWarsFeature : MonoBehaviour
         }
 
         
-        
-
     }
     public void useSWF()
     {

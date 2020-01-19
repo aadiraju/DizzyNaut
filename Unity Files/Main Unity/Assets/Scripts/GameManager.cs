@@ -12,9 +12,19 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
     public GameObject Char;
     //public GameObject PanelGame;
+
+    AudioSource audioData;
     public void UseSWFeature()
     {
         Char.GetComponent<StarWarsFeature>().useSWF();
+        //sound();
+    }
+
+    public void sound()
+    {
+        audioData = GetComponent<AudioSource>();
+        audioData.Play(0);
+        Debug.Log("started");
     }
     public void disactiveStartForm()
     {
