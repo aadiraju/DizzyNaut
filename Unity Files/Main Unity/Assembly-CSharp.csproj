@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{92DD549E-0534-0509-AFC1-6A0DD19D4A57}</ProjectGuid>
+    <ProjectGuid>{E886DF12-CD24-A5EB-9FDD-731688042AD3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,59 +63,62 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Astroid.cs" />
+    <Compile Include="Assets\Scripts\EndPoint.cs" />
     <Compile Include="Assets\Scripts\Gravity.cs" />
+    <Compile Include="Assets\Scripts\GravityAffectedObject.cs" />
     <Compile Include="Assets\Scripts\GyroSCR.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Obsticale.cs" />
     <Reference Include="Cinemachine">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Connect.Share.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.Connect.Share.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core.Scripts">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.Scripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.InteractiveTutorialsFramework">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/UnityEditor.InteractiveTutorialsFramework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.024">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -319,16 +322,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>C:/Users/lhzar/GyroSpaceGame/Library/PackageCache/com.unity.connect.share@1.0.9-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+      <HintPath>C:/Users/lhzar/Documents/GitHub/GyroSpaceGame/Unity Files/Main Unity/Library/PackageCache/com.unity.connect.share@1.0.9-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
