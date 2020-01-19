@@ -15,9 +15,11 @@ public class StarWarsFeature : MonoBehaviour
     Vector3 blade;
     Vector3 result;
     public float forceP = 11;
+    private Collider2D cl2d;
     void Start()
     {
         target.GetComponent<MeshRenderer>().enabled = false;
+        target.GetComponent<Collider2D>().enabled = false;
     }
 
     void FixedUpdate()
@@ -33,10 +35,11 @@ public class StarWarsFeature : MonoBehaviour
     {
         if (z)
         {
+            target.GetComponent<Collider2D>().enabled = true ;
             target.GetComponent<MeshRenderer>().enabled = true;
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0) Stop();
-            target.GetComponent<Transform>().RotateAround(transform.position, Vector2.up, 800 * Time.deltaTime);
+            target.GetComponent<Transform>().RotateAround(transform.position, new Vector3(0f, 0f, 1f), 800 * Time.deltaTime);
             //ExplosionDamage(transform.position, 1);
         }
 
@@ -52,6 +55,7 @@ public class StarWarsFeature : MonoBehaviour
     {
         z = false;
         target.GetComponent<MeshRenderer>().enabled = false ;
+        target.GetComponent<Collider2D>().enabled = false;
         timeLeft = .6f;
 
     }

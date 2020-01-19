@@ -6,10 +6,15 @@ public class Rotator : MonoBehaviour
 {
     //[SerializeField]
     private float rotSpeed;
+    bool Boolean;
+    int direction;
+
 
     private void Start()
     {
-        rotSpeed = Random.Range(0.05f, 1.0f);
+        Boolean = (Random.value > 0.5f);
+        direction = Boolean ? 1 : -1;
+        rotSpeed = Random.Range(0.05f, 1.0f) * direction;
     }
     void FixedUpdate()
     {

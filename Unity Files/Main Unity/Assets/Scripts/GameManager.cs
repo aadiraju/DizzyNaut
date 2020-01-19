@@ -9,7 +9,13 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverForm;
     public GameObject NextLevelForm;
     public GameObject StartForm;
+    public GameObject canvas;
+    public GameObject Char;
     //public GameObject PanelGame;
+    public void UseSWFeature()
+    {
+        Char.GetComponent<StarWarsFeature>().useSWF();
+    }
     public void disactiveStartForm()
     {
         if (StartForm.activeSelf.Equals(true)) StartForm.SetActive(false);
@@ -33,7 +39,8 @@ public class GameManager : MonoBehaviour
     {
 
         //activeChangeMenuForm();
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
     public void NextScene()
@@ -57,12 +64,27 @@ public class GameManager : MonoBehaviour
         StartForm.SetActive(true);
         //PanelGame.SetActive(false);
         Pause();
+
+        menuForm.SetActive(false);
+        GameOverForm.SetActive(false);
+        NextLevelForm.SetActive(false);
+        //StartForm.SetActive(true);
+        //Debug.Log(canvas.GetComponent<RectInt>().width + " " + canvas.GetComponent<RectInt>().height);
+
+        //RectTransform objectRectTransform = canvas.GetComponent<RectTransform>();
+        //float w = objectRectTransform.rect.width;
+        //float h = objectRectTransform.rect.height;
+
+        //Debug.Log("width: " + w + ", height: " + h);
+        //menuForm.GetComponent<RectTransform>().localScale = new Vector2(6.37f * w, 1.45f * h);
+        //menuForm.GetComponent<RectTransform>().sizeDelta = new Vector2((1274 / w) * 200, (506 / h) * 350);
+
     }
 
     void Update()
     {
         isPausedM();
-        Debug.Log(Time.deltaTime);
+        //Debug.Log(Time.deltaTime);
     }
     void isPausedM()
     {

@@ -268,6 +268,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 204802041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &221344456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7943246596586831062, guid: ea964db9ebc655040aaa62738b18ab7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2106684565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &274841678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1480,6 +1486,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2df8771b70c8a384b91b2629b77d1b8c, type: 3}
+--- !u!1 &1417400984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7662574731419964454, guid: e30749f36e4491042ae3f41d4cd57b00,
+    type: 3}
+  m_PrefabInstance: {fileID: 538732071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1421638519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1507,6 +1519,16 @@ PrefabInstance:
       propertyPath: StartForm
       value: 
       objectReference: {fileID: 2106684566}
+    - target: {fileID: 5108772540451663904, guid: 90f1de904345cb4478d63205d7a0ba9d,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 221344456}
+    - target: {fileID: 5108772540451663904, guid: 90f1de904345cb4478d63205d7a0ba9d,
+        type: 3}
+      propertyPath: Char
+      value: 
+      objectReference: {fileID: 1417400984}
     - target: {fileID: 5108772540451663917, guid: 90f1de904345cb4478d63205d7a0ba9d,
         type: 3}
       propertyPath: m_Name
@@ -2169,6 +2191,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6020822670741498903, guid: ea964db9ebc655040aaa62738b18ab7b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1421638520}
+    - target: {fileID: 6020822670741498903, guid: ea964db9ebc655040aaa62738b18ab7b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UseSWFeature
+      objectReference: {fileID: 0}
     - target: {fileID: 7943246595573383055, guid: ea964db9ebc655040aaa62738b18ab7b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
