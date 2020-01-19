@@ -8,6 +8,9 @@ public class GravityAffectedObject : MonoBehaviour
     float dirX, dirY;
 
     [SerializeField]
+    float weight = 5f;
+
+    [SerializeField]
     float moveSpeed = 100f;
     void Start()
     {
@@ -24,6 +27,6 @@ public class GravityAffectedObject : MonoBehaviour
 
     void FixedUpdate()
     {
-            rb.velocity = new Vector2(dirX, dirY);
+            rb.velocity = new Vector2(dirX * (1/weight), dirY * (1/weight));
     }
 }

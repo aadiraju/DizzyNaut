@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private bool isPaused;
+    static public bool isPaused;
     void Start()
     {
         Time.timeScale = 0.0f;
     }
 
-        void FixedUpdate()
+    void Update()
     {
         isPausedM();
     }
@@ -25,14 +25,19 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0.0f;
         }
     }
-    public static void Pause()
+    public void Pause()
     {
-        if (isPaused) isPaused = false;
+        Debug.Log("Puase");
+        if (isPaused)
+        {
+            isPaused = false;
+        }
         else isPaused = true;
         
     }
-    public static void Exit()
+    public void Exit()
     {
+        Debug.Log("Exit");
         Application.Quit();
     }
 }
