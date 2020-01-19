@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         if (NextLevelForm.activeSelf.Equals(true)) NextLevelForm.SetActive(false);
         else NextLevelForm.SetActive(true);
         Pause();
+
     }
     public void activeChangeMenuForm()
     {
@@ -30,12 +31,18 @@ public class GameManager : MonoBehaviour
     }
     public void ReloadScene()
     {
+
+        //activeChangeMenuForm();
         SceneManager.LoadScene(0);
+
     }
     public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +  1);
         Debug.Log("next Scene");
+        Pause();
+        //Debug.Log("Active Scene name is: " + scene.name + "\nActive Scene index: " + scene.buildIndex);
+
     }
     public void activeChangeGameOverForm()
     {
@@ -80,8 +87,8 @@ public class GameManager : MonoBehaviour
     }
     public void Exit()
     {
-        Pause();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Pause();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         Debug.Log("Exit");
         Application.Quit();
