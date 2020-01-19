@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2161748817992123430}
   - component: {fileID: 1304351853}
   - component: {fileID: 114051792087473004}
+  - component: {fileID: 95398149358425960}
   m_Layer: 0
   m_Name: Astroid
   m_TagString: Obsticale
@@ -152,4 +153,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39de29b8b4f98a4492d99dae5f53441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 1
+--- !u!95 &95398149358425960
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161748817992123433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
