@@ -12,7 +12,10 @@ public class HitByPlayer : MonoBehaviour
     {
         Rigidbody rb = GetComponent<Rigidbody>();
     }
-
+    private void Update()
+    {   
+        transform.TransformPoint(Vector3.zero);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,9 +27,14 @@ public class HitByPlayer : MonoBehaviour
 
             float triangleX = x - player.position.x;
             float triangleY = y - player.position.y;
+            //Vector3 r = transform.- player.position;
 
             //Rigidbody2D.
-            
+            if(gameObject.tag == "Enemy")
+            {
+                //transform.position += r;
+                Debug.Log(transform.TransformPoint(Vector3.zero));
+            }
             
             rb.AddForce(new Vector2(triangleX * 10, triangleY * 10), ForceMode2D.Impulse);
 

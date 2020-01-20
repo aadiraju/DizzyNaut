@@ -11,12 +11,14 @@ public class GameManager : MonoBehaviour
     public GameObject StartForm;
     public GameObject canvas;
     public GameObject Char;
+    public GameObject Sword;
     //public GameObject PanelGame;
 
     AudioSource audioData;
     public void UseSWFeature()
     {
         Char.GetComponent<StarWarsFeature>().useSWF();
+        Sword.GetComponent<SwordSound>().PlaySound();
         //sound();
     }
 
@@ -69,7 +71,7 @@ public class GameManager : MonoBehaviour
 
     static public bool isPaused;
     void Start()
-    {
+    {   
         //Time.timeScale = 0.0f;
         StartForm.SetActive(true);
         //PanelGame.SetActive(false);
